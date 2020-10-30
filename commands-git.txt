@@ -20,13 +20,31 @@ git show : muestra los cambios hechos en el archivo , es muy bueno para ver lo q
 
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.
 
-git log --stat : para ver los cambios en los commits mas especificos para ver si se agrego un archivo mas en ese commit 
+    git log --oneline - Te muestra el id commit y el título del commit.
+    git log --decorate- Te muestra donde se encuentra el head point en el log.
+    git log --stat - Explica el número de líneas que se cambiaron brevemente.
+    git log -p- Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+    git shortlog - Indica que commits ha realizado un usuario, mostrando el usuario y el titulo de sus commits.
+    git log --graph --oneline --decorate y
+    git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes personalizados de los commits.
+    git log -3 - Limitamos el número de commits.
+    git log --after=“2018-1-2” ,
+    git log --after=“today” y
+    git log --after=“2018-1-2” --before=“today” - Commits para localizar por fechas.
+    git log --author=“Name Author” - Commits realizados por autor que cumplan exactamente con el nombre.
+    git log --grep=“INVIE” - Busca los commits que cumplan tal cual está escrito entre las comillas.
+    git log --grep=“INVIE” –i- Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+    git log – index.html- Busca los commits en un archivo en específico.
+    git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
+    git log > log.txt - guardar los logs en un archivo txt
 
 git diff : Con esto podemos lograr una comparación de versiones usando el codigo del commit , podemos verlo en git log
 
 Viajes en el tiempo 
-git reset : este comando + el codigo del commit podemos volver a esa version. git reset 1h23iu12h --hard(borra todo lo que paso hasta antes de ese commit) --soft (deja en cache la ultima version que aun tenemos) preferible usar --hard para borrar en brusco tdo
+git reset : este comando + el codigo del commit podemos volver a esa version. git reset 1h23iu12h --hard(borra todo lo que paso hasta antes de ese commit) --soft (deja en cache la ultima version que aun tenemos) preferible usar --hard para borrar en brusco tdo solo en casos necesarios
 
-git checkout : con esto podemos volver a ver un archivo en su primera versio o segunda o la que quieras git checkout baa326bfdfceabbc714c381b664b18cff41c26bb historia.txt esto suplanta ala ultima version de dicho archivo por la version anterior que queramos suplantar.
+git checkout : con esto podemos volver a ver un archivo en su primera version o segunda o la que quieras git checkout baa326bfdfceabbc714c381b664b18cff41c26bb historia.txt esto suplanta ala ultima version de dicho archivo por la version que estemos viendo en ese momento.
 
-para volver a ver la ultima version dejando de ver la version anterior , solo debemos hacer  git checkout master historia.txt . pero si queremos suplantarlo por una version anterior y modificada hacemos los pasos comunes git add . etc..
+La ventaje de checkout es que podemos ver , volver y pasearnos por todos las versiones del proyecto a comparación de reset 
+
+para volver a ver la ultima version dejando de ver la version anterior , solo debemos hacer  git checkout master historia.txt . pero si queremos suplantarlo por una version anterior y modificada hacemos los pasos comunes git add . etc.. y eso suplantara por ejepmlo la version 3 con la ultima que era la 10 (se usa siempre y cuando sea un caso necesario)
