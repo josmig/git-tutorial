@@ -20,3 +20,7 @@ git show : muestra los cambios hechos en el archivo , es muy bueno para ver lo q
 
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.
 
+git diff : Con esto podemos lograr una comparación de versiones usando el codigo del commit , podemos verlo en git log
+
+Viajes en el tiempo 
+git reset : este comando + el codigo del commit podemos volver a esa version. git reset 1h23iu12h --hard(borra todo lo que paso hasta antes de ese commit) --soft (deja en cache la ultima version que aun tenemos) preferible usar --hard para borrar en brusco tdo
