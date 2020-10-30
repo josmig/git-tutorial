@@ -2,3 +2,5 @@ Hola Soy Miguel Pantigoso
 
 Tengo 22 años soy de Perú
 estoy llevando un curso para aprender a usar git & github
+
+Estudie Ingenieria de Sistemas , me apasiona la tecnologia 
