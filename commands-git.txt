@@ -57,3 +57,5 @@ git diff : Con esto podemos lograr una comparación de versiones usando el codig
     //fusion de ramas
     git branch : para ver las ramas
     git merge name_rama : con esto fusionamos las ramas
+    
+    **si queremos hacer un merge pero desde una rama hija es el mismo paso git merge master
