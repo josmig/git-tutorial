@@ -1,5 +1,10 @@
 body{
-    color:deeppink;
-    text-align:center;
     font-family:"Arial";
 }	
+#container{
+    width: 50%;
+    border:1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
