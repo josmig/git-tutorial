@@ -55,3 +55,5 @@ git diff : Con esto podemos lograr una comparación de versiones usando el codig
     git checkout new_branch (para cambiar de ramas)
 
     //fusion de ramas
+    git branch : para ver las ramas
+    git merge name_rama : con esto fusionamos las ramas
