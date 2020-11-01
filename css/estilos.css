@@ -8,3 +8,10 @@ body{
     text-align: center;
 }
 
+#cabecera{
+    padding: 20px;
+    background: lightseagreen;
+    color:#fff;
+    box-shadow: 0 0 10px 0;
+    text-align:left;
+}
