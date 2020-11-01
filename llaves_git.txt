@@ -1,0 +1,4 @@
+ssh-keygen -t rsa -b 4096 -C "pantigosomiguel59@gmail.com"
+eval $(ssh-agent -s) : con esto vemos que el proceso esta corriendo
+ssh-add ~/.ssh/id_rsa : para añadir nuestra llave privada
+Identity added: /c/Users/panti/.ssh/id_rsa (pantigosomiguel59@gmail.com)
