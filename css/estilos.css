@@ -1,5 +1,17 @@
 body{
-    color:deeppink;
-    text-align:center;
     font-family:"Arial";
 }	
+#container{
+    width: 50%;
+    border:1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cabecera{
+    padding: 20px;
+    background: lightseagreen;
+    color:#fff;
+    box-shadow: 0 0 10px 0;
+    text-align:left;
+}

@@ -40,11 +40,18 @@ git log: se usa para ver la historia de nuestros archivos, los commits, el usuar
 
 git diff : Con esto podemos lograr una comparación de versiones usando el codigo del commit , podemos verlo en git log
 
-Viajes en el tiempo 
-git reset : este comando + el codigo del commit podemos volver a esa version. git reset 1h23iu12h --hard(borra todo lo que paso hasta antes de ese commit) --soft (deja en cache la ultima version que aun tenemos) preferible usar --hard para borrar en brusco tdo solo en casos necesarios
+// Viajes en el tiempo 
+    git reset : este comando + el codigo del commit podemos volver a esa version. git reset 1h23iu12h --hard(borra todo lo que paso hasta antes de ese commit) --soft (deja en cache la ultima version que aun tenemos) preferible usar --hard para borrar en brusco tdo solo en casos necesarios
 
-git checkout : con esto podemos volver a ver un archivo en su primera version o segunda o la que quieras git checkout baa326bfdfceabbc714c381b664b18cff41c26bb historia.txt esto suplanta ala ultima version de dicho archivo por la version que estemos viendo en ese momento.
+    git checkout : con esto podemos volver a ver un archivo en su primera version o segunda o la que quieras git checkout baa326bfdfceabbc714c381b664b18cff41c26bb historia.txt esto suplanta ala ultima version de dicho archivo por la version que estemos viendo en ese momento.
 
-La ventaje de checkout es que podemos ver , volver y pasearnos por todos las versiones del proyecto a comparación de reset 
+    La ventaje de checkout es que podemos ver , volver y pasearnos por todos las versiones del proyecto a comparación de reset 
 
-para volver a ver la ultima version dejando de ver la version anterior , solo debemos hacer  git checkout master historia.txt . pero si queremos suplantarlo por una version anterior y modificada hacemos los pasos comunes git add . etc.. y eso suplantara por ejepmlo la version 3 con la ultima que era la 10 (se usa siempre y cuando sea un caso necesario)
+    para volver a ver la ultima version dejando de ver la version anterior , solo debemos hacer  git checkout master historia.txt . pero si queremos suplantarlo por una version anterior y modificada hacemos los pasos comunes git add . etc.. y eso suplantara por ejepmlo la version 3 con la ultima que era la 10 (se usa siempre y cuando sea un caso necesario)
+
+
+// Creando nuevas ramas
+    git brancha new_branch
+    git checkout new_branch (para cambiar de ramas)
+
+    //fusion de ramas
